@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor principal del formulario de registro -->
+    <div class="register-container">
+        <h2>📝 Crear cuenta</h2>
+
+        <!-- Formulario para registrar un nuevo usuario -->
+        <form action="registrar.php" method="POST">
+            <!-- Campo para ingresar el nombre de usuario -->
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario" required>
+
+            <!-- Campo para ingresar la contraseña -->
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" required>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Registrar</button>
+        </form>
+
+        <!-- Enlace para redirigir al inicio de sesión si ya tiene cuenta -->
+        <div class="bottom-link">
+            <p>¿Ya tienes cuenta? <a href="index.html">Iniciar sesión</a></p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© <?php echo date("Y"); ?> Todos los derechos reservados.</p>
+        <p>Desarrollado con 💻 por <strong>Rolando Castillo</strong></p>
+    </footer>
+
+</body>
+</html>
